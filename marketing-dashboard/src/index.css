@@ -1,0 +1,82 @@
+/* ---------------------------------------------------
+   RESET + BASE TYPOGRAPHY
+--------------------------------------------------- */
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Dashboard is always light-mode */
+  color-scheme: light;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  /* Remove forced centering from Vite template */
+  display: block;
+}
+
+a {
+  font-weight: 500;
+  color: #2d5bff;
+  text-decoration: none;
+}
+a:hover {
+  color: #1a3dd9;
+}
+
+/* ---------------------------------------------------
+   HEADINGS
+--------------------------------------------------- */
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+}
+
+/* ---------------------------------------------------
+   BUTTONS (if you need them)
+--------------------------------------------------- */
+button {
+  border-radius: 6px;
+  border: 1px solid #d0d4db;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover {
+  border-color: #2d5bff;
+  background-color: #f3f6ff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid rgba(45, 91, 255, 0.4);
+}
+
+/* ---------------------------------------------------
+   REMOVE DARK-MODE OVERRIDE FROM TEMPLATE
+--------------------------------------------------- */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}

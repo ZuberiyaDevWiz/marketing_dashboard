@@ -1,0 +1,62 @@
+.table-row {
+  height: 38px;
+  border-bottom: 1px solid #f0f1f3; /* Softer light divider like screenshot */
+}
+
+/* Cells styling */
+.cell {
+  padding: 10px 16px;
+  font-size: 14px;
+  text-align: right;
+  white-space: nowrap;
+  color: #2c3e50;
+}
+
+/* Left-align for the first column */
+.category-cell {
+  text-align: left;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2c3e50;
+}
+
+/* Sub-rows (Direct, Seasonality, Holidays, Trends) */
+.sub-row .category-cell {
+  padding-left: 24px;
+  font-weight: 500;
+}
+
+.sub-row .category-cell::before {
+  content: "";
+  width: 14px;
+  height: 1px;
+  background: #808080;
+  display: inline-block;
+}
+
+/* Expand/collapse button (if tree rows are collapsible) */
+.expand-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 13px;
+  opacity: 0.7;
+  margin-right: 4px;
+}
+
+.expand-btn:hover {
+  opacity: 1;
+}
+
+/* Hover row effect */
+.table-row:hover {
+  background: #f6f8fa;
+}
+
+/* Total row styling */
+.total-row td {
+  background: #f3f5f8;
+  font-weight: 700;
+}
