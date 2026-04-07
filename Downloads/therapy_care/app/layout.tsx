@@ -22,45 +22,43 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  // metadataBase: new URL("https://therapycareoptions.vercel.app"), // ✅ Fix OG + Twitter image resolution
-  // title: "Options Therapy | Baton Rouge, Louisiana",
-  // description:
-  //   "Your path to better physical wellness starts here. Providing expert physical therapy and recovery solutions in Baton Rouge.",
+  metadataBase: new URL("https://therapycareoptions.vercel.app"), // ✅ Fix OG + Twitter image resolution
+  title: "Options Therapy | Baton Rouge, Louisiana",
+  description:
+    "Your path to better physical wellness starts here. Providing expert physical therapy and recovery solutions in Baton Rouge.",
 
-  // // ✅ Favicon setup (place favicon.ico in /public)
-  // icons: {
-  //   icon: "/favicon.ico",
-  //   shortcut: "/favicon.ico",
-  //   apple: "/favicon.ico",
-  // },
+  // ✅ Favicon setup (place favicon.ico in /public)
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 
-  // ✅ Open Graph metadata
-  // openGraph: {
-  //   title: "Options Therapy | Baton Rouge, Louisiana",
-  //   description:
-  //     "Your path to better physical wellness starts here. Providing expert physical therapy and recovery solutions in Baton Rouge.",
-  //   url: "https://therapycareoptions.vercel.app",
-  //   siteName: "Options Therapy",
-  //   images: [
-  //     {
-  //       url: "/images/therapy_logo.png", // ✅ Your preview image in /public/images/
-  //       width: 1200,
-  //       height: 630,
-  //       alt: "Options Therapy Clinic preview image",
-  //     },
-  //   ],
-  //   locale: "en_US",
-  //   type: "website",
-  // },
+  openGraph: {
+    title: "Options Therapy | Baton Rouge, Louisiana",
+    description:
+      "Your path to better physical wellness starts here. Providing expert physical therapy and recovery solutions in Baton Rouge.",
+    url: "https://therapycareoptions.vercel.app",
+    siteName: "Options Therapy",
+    images: [
+      {
+        url: "/images/therapy_logo.png", // ✅ Your preview image in /public/images/
+        width: 1200,
+        height: 630,
+        alt: "Options Therapy Clinic preview image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 
-  // // ✅ Twitter card setup
-  // twitter: {
-  //   card: "summary_large_image",
-  //   title: "Options Therapy | Baton Rouge, Louisiana",
-  //   description:
-  //     "Your path to better physical wellness starts here. Providing expert physical therapy and recovery solutions in Baton Rouge.",
-  //   images: ["/images/therapy_logo.png"],
-  // },
+  twitter: {
+    card: "summary_large_image",
+    title: "Options Therapy | Baton Rouge, Louisiana",
+    description:
+      "Your path to better physical wellness starts here. Providing expert physical therapy and recovery solutions in Baton Rouge.",
+    images: ["/images/therapy_logo.png"],
+  },
 };
 
 export default function RootLayout({
